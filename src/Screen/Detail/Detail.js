@@ -35,8 +35,8 @@ const Detail = props => {
   const submitData = () => {
     dispatch(
       AddCartAction({
-        name: 'XX99 Mark I',
-        price: 10000,
+        name: DetailRes?.produk.nama,
+        price: DetailRes?.produk.price,
         jumlah: item,
       }),
     );

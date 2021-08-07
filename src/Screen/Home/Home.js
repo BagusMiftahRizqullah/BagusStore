@@ -20,7 +20,7 @@ import Feather from 'react-native-vector-icons/Feather';
 import {useDispatch, useSelector} from 'react-redux';
 import {IconHeadphone1} from '../../Assets/Assets';
 import {getHomeAction} from './redux/action';
-import {DellCartAction} from '../Cart/redux/action';
+import {DellCartAction, AddCartAction} from '../Cart/redux/action';
 
 const Home = props => {
   const [visible, setVisible] = useState(false);
@@ -53,6 +53,17 @@ const Home = props => {
 
   console.log(item, 'ini item');
   console.log(status, 'ini status');
+
+  const submitData = () => {
+    dispatch(
+      AddCartAction({
+        name: HomeRes?.produk.nama,
+        price: HomeRes?.produk.price,
+        jumlah: item,
+      }),
+    );
+    props.navigation.navigate('Mainapp');
+  };
 
   return (
     <SafeAreaView style={{flex: 1}}>
@@ -164,7 +175,9 @@ const Home = props => {
               </View>
               <View>
                 <TouchableOpacity
-                  onPress={() => props.navigation.navigate('Cart')}
+                  onPress={() => {
+                    submitData(), props.navigation.navigate('Cart');
+                  }}
                   style={stylesOverlay.ContainerButton}>
                   <View>
                     <Text style={stylesOverlay.TextButtonBuy}>CHECKOUT</Text>
@@ -210,7 +223,7 @@ const styles = StyleSheet.create({
     margin: moderateScale(10),
   },
   containerbox: {
-    height: moderateScale(310),
+    height: moderateScale(330),
     width: moderateScale(300),
     borderRadius: moderateScale(12),
     marginBottom: moderateScale(24),

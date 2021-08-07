@@ -14,11 +14,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "29649802817-b09pphu8uvnsdarptrnbfq0nvl0dgj55.apps.googleusercontent.com",
+          "client_id": "29649802817-4i9v1krhvvh1j6e9essh30nvtd63aiaf.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.bagusstore",
-            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+            "certificate_hash": "f2b7244d4071c53b1a39f9f92c33db8e590e951b"
           }
         },
         {
