@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "29649802817",
+    "project_id": "bagusstore-1176e",
+    "storage_bucket": "bagusstore-1176e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29649802817:android:083630cf118a09c8b218c0",
+        "android_client_info": {
+          "package_name": "com.bagusstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29649802817-b09pphu8uvnsdarptrnbfq0nvl0dgj55.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bagusstore",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "29649802817-1r6vr8rq39p1g5nt8tgum7djdi1jb5p2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZCvSJbGBeqpHRHu-Bx-denS-11TzK-Wk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29649802817-1r6vr8rq39p1g5nt8tgum7djdi1jb5p2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
